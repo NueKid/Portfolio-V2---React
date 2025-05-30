@@ -1,18 +1,19 @@
 import React from 'react';
 import { Container, Navbar, NavbarBrand } from 'reactstrap';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
-import { PROJECTS } from './app/shared/PROJECTS';
-import ProjectCard from './features/projects/ProjectCard';
+import HomePage from './pages/HomePage';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <ProjectCard project={PROJECTS[0]} />
-      Hello Portfolio!
-    </div>
-  );
+      <div className="App bg-dark text-light">
+        <Header />
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+          </Routes>
+      </div>
+    );
 }
 
 export default App;
