@@ -1,11 +1,12 @@
 import { Container, Row, Col } from 'reactstrap';
-import { PROJECTS } from '../app/shared/PROJECTS';
-import ProjectCard from '../features/projects/ProjectCard';
+import ProjectsList from '../features/projects/PorjectsList';
+import About from '../features/About';
 
 const HomePage = () => {
     return (
         <div className='container'>
-        <ProjectCard project={PROJECTS[0]} />
+        <About />
+        <ProjectsList />
         </div>
     )
 }

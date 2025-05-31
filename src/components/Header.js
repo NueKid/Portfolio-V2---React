@@ -14,30 +14,30 @@ const Header = () => {
 
     return (
         <Navbar dark className='color-primary' sticky='top' expand='md' >
-            <NavbarBrand className='ms-5' href='/'>
+            <NavbarBrand className='ms-5' href='/home'>
                 Ryen Masters
             </NavbarBrand>
-            <NavbarToggler onClick={() => isOpen(!setIsOpen)} />
+            <NavbarToggler onClick={() => setIsOpen(!isOpen)} />
             <Collapse isOpen={isOpen} navbar>
             <Nav className='ms-auto' navbar>
                     <NavItem >
-                        <NavLink className='nav-link' to='/'>
-                            <i className='fa fa-home fa-lg' /> Home
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink className='nav-link' to='/browse'>
-                            <i className='fa fa-list fa-lg' /> Browse
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink className='nav-link' to='/ReadingListDirectory'>
-                            <i className='fa fa-book fa-lg' /> Reading List
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink className='nav-link' to='/about'>
+                        <NavLink className='nav-link' to='/home#about'>
                             <i className='fa fa-info fa-lg' /> About
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/home#portfolio'>
+                            <i className="fa fa-list fa-lg" /> Portfolio
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/resume'>
+                            <i className='fa fa-file fa-lg' /> Resume
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='/home#contact'>
+                            <i className='fa fa-address-card fa-lg' /> Contact
                         </NavLink>
                     </NavItem>
                 </Nav>

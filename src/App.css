@@ -41,3 +41,9 @@
 .navbar-dark {
   background-color: #8F3985;
 }
+
+.site-footer {
+  background-color: #8F3985;
+  padding: 20px 0;
+  margin-top: 2rem;
+}
