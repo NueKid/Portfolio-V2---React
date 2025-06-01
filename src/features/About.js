@@ -19,14 +19,15 @@ const About = () => {
     };
 
     return (
-        <Container>
-            <h1>About</h1>
+        <Container className='fluid mt-2'>
+                <h1 id='about'>About</h1>
+                <hr />
             <Row>
-                <Col>
+                <Col className='mt-2 fluid d-flex justify-content-center'>
                     <img src={ProfilePicture} alt="Ryen Masters" className="img-fluid rounded-circle mb-4" style={{ width: '200px', height: '200px' }} />
                 </Col>
-                <Col>
-                    <p>
+                <Col className='mt-2 fluid d-flex'>
+                    <p style={{ textAlign: 'left' }}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                         commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
@@ -39,7 +40,7 @@ const About = () => {
                 <Col lg='6'>
                     <Accordion flush open={open} toggle={toggle}>
                         <AccordionItem>
-                            <AccordionHeader targetId='1'><i className='fa fa-info fa-lg' />Skills</AccordionHeader>
+                            <AccordionHeader targetId='1'><i className='fa fa-info fa-lg px-2'/>Skills</AccordionHeader>
                             <AccordionBody accordionId='1'>
                                 <Progress 
                                     className='my-2' 
@@ -56,6 +57,7 @@ const About = () => {
                     </Accordion>
                 </Col>
             </Row>
+            <hr />
         </Container>
     )
 }

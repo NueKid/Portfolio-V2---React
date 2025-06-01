@@ -6,6 +6,7 @@ const ProjectsList = () => {
     return (
         <Container className="fluid mt-2">
             <h1 id='portfolio'>Portfolio</h1>
+            <hr />
             <Row>
                 {PROJECTS.map((project) => (
                     <Col 
@@ -17,6 +18,7 @@ const ProjectsList = () => {
                     </Col>
                 ))}
             </Row>
+            <hr />
         </Container>
     )
 }
