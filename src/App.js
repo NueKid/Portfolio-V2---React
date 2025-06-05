@@ -11,7 +11,7 @@ function App() {
       <div className="App bg-dark text-light">
         <Header />
           <Routes>
-            <Route path='/home' element={<HomePage />} />
+            <Route path='/' element={<HomePage />} />
           </Routes>
         <Footer />
       </div>

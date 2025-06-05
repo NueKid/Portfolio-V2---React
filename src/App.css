@@ -58,3 +58,7 @@
     border-bottom: 1px ridge;
     min-height: 200px;
 }
+
+.tab.active {
+background-color:#8F3985 !important;
+}

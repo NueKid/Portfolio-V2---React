@@ -1,22 +1,23 @@
-import { Container, Row, Col, Progress } from 'reactstrap';
-import React, { useState } from 'react';
+import { Container, 
+    Row, 
+    Col, 
+    Progress, 
+    Nav,
+    NavItem,
+    NavLink,
+    TabPane, 
+    TabContent } from 'reactstrap';
+import { useState } from 'react';
 import ProfilePicture from '../app/assets/img/ryen-masters.jpg';
-import {
-    Accordion,
-    AccordionItem,
-    AccordionHeader,
-    AccordionBody
-} from 'reactstrap';
 
 const About = () => {
-    const [open, setOpen] = useState('');
-    const toggle = (id) => {
-        if (open === id) {
-            setOpen();
-        } else {
-            setOpen(id);
+    const [currentTab, setCurrentTab] = useState('1');
+
+    const toggleTab = (tab) => {
+        if (currentTab !== tab) {
+            setCurrentTab(tab);
         }
-    };
+    }
 
     return (
         <Container className='fluid mt-2'>
@@ -26,22 +27,41 @@ const About = () => {
                 <Col className='mt-2 fluid d-flex justify-content-center'>
                     <img src={ProfilePicture} alt="Ryen Masters" className="img-fluid rounded-circle mb-4" style={{ width: '200px', height: '200px' }} />
                 </Col>
-                <Col className='mt-2 fluid d-flex'>
-                    <p style={{ textAlign: 'left' }}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
-                    </p>
-                </Col>
-            </Row>
-            <Row className='justify-content-center'>
-                <Col lg='6'>
-                    <Accordion flush open={open} toggle={toggle}>
-                        <AccordionItem>
-                            <AccordionHeader targetId='1'><i className='fa fa-info fa-lg px-2'/>Skills</AccordionHeader>
-                            <AccordionBody accordionId='1'>
+                <Col>
+                    <div>
+                        <Nav tabs justified>
+                            <NavItem>
+                                <NavLink
+                                    className='tab text-light'
+                                    active={currentTab === '1'}
+                                    onClick={() => toggleTab('1')}
+                                    style={{ cursor: 'pointer', caretColor: 'transparent'}}
+                                >
+                                    About Me
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink
+                                    className='tab text-light'
+                                    active={currentTab === '2'}
+                                    onClick={() => toggleTab('2')}
+                                    style={{ cursor: 'pointer', caretColor: 'transparent'}}
+                                    >
+                                    Skills
+                                </NavLink>
+                            </NavItem>
+                        </Nav>
+                        <TabContent activeTab={currentTab}>
+                            <TabPane tabId='1'>
+                                <p style={{ textAlign: 'left' }}>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                    anim id est laborum.
+                                </p>
+                            </TabPane>
+                            <TabPane tabId='2'>
                                 <Progress 
                                     className='my-2' 
                                     value='75'
@@ -52,9 +72,9 @@ const About = () => {
                                     value='85'
                                 > JavaScript
                                 </Progress>
-                            </AccordionBody>
-                        </AccordionItem>
-                    </Accordion>
+                            </TabPane>
+                        </TabContent>
+                    </div>
                 </Col>
             </Row>
             <hr />
