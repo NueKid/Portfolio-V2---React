@@ -6,63 +6,63 @@ export const PROJECTS = [
         name: 'Literature Club',
         image: LitClubLogo,
         type: 'Fullstack Web + Mobile App',
-        description: 'A platform for book lovers to share and discuss their favorite literature.',
+        description: 'A platform for book lovers to share and discuss their favorite literature. Every page is an adventure.',
         tags: ['React', 'React Native', 'Node.js', 'MongoDB'],
         github: [
             {
-                name: 'Frontend Web Client',
-                url: 'https://github.com/NueKid/literatureclubWebClient'
+                app: 'Frontend Web Client',
+                url: 'https://github.com/NueKid/literatureclubWebClient', 
             },
             {
-                name: 'Backend API',
+                app: 'Backend API',
                 url: 'https://github.com/NueKid/literatureclubServer'
             },
             {
-                name: 'Frontend Mobile Client',
+                app: 'Frontend Mobile Client',
                 url: 'https://github.com/NueKid/literatureclubMobileClient'
             }
         ]
     },
     {
-        id: 0,
+        id: 1,
         name: 'Literature Club Mobile',
         image: LitClubLogo,
         type: 'Fullstack Web + Mobile App',
-        description: 'A platform for book lovers to share and discuss their favorite literature.',
+        description: 'Testing ID 1',
         tags: ['React', 'React Native', 'Node.js', 'MongoDB'],
         github: [
             {
-                name: 'Frontend Web Client',
+                app: 'Frontend Web Client',
                 url: 'https://github.com/NueKid/literatureclubWebClient'
             },
             {
-                name: 'Backend API',
+                app: 'Backend API',
                 url: 'https://github.com/NueKid/literatureclubServer'
             },
             {
-                name: 'Frontend Mobile Client',
+                app: 'Frontend Mobile Client',
                 url: 'https://github.com/NueKid/literatureclubMobileClient'
             }
         ]
     },
     {
-        id: 0,
+        id: 2,
         name: 'Literature Club Server',
         image: LitClubLogo,
         type: 'Fullstack Web + Mobile App',
-        description: 'A platform for book lovers to share and discuss their favorite literature.',
+        description: 'Testing ID 2',
         tags: ['React', 'React Native', 'Node.js', 'MongoDB'],
         github: [
             {
-                name: 'Frontend Web Client',
+                app: 'Frontend Web Client',
                 url: 'https://github.com/NueKid/literatureclubWebClient'
             },
             {
-                name: 'Backend API',
+                app: 'Backend API',
                 url: 'https://github.com/NueKid/literatureclubServer'
             },
             {
-                name: 'Frontend Mobile Client',
+                app: 'Frontend Mobile Client',
                 url: 'https://github.com/NueKid/literatureclubMobileClient'
             }
         ]

@@ -134,7 +134,7 @@ const ContactForm = () => {
                 <FormGroup row align='left'>
                     <Col md={{ size: '10', offset: '2' }}>
                         <Button type='submit' className='btn-primary'>
-                            Send Feedback
+                            Send Message
                         </Button>
                     </Col>
                 </FormGroup>

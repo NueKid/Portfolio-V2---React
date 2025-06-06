@@ -3,10 +3,10 @@ import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
     return (
-        <Container className='mt-2'>
+        <Container className="fluid mt-2">
+            <h1 id='contact'>Contact</h1>
+            <hr />
             <Row>
-                <h1 id='contact'>Contact</h1>
-                <hr />
                 <ContactForm />
             </Row>
             <hr />

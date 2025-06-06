@@ -12,7 +12,7 @@ const ProjectsList = () => {
                     <Col 
                         md='4'
                         key={project.id}
-                        className="m-6 d-flex justify-content-center"
+                        className='mt-2 fluid d-flex justify-content-center align-items-center'
                     >
                         <ProjectCard project={project} />
                     </Col>

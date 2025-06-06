@@ -24,10 +24,10 @@ const About = () => {
                 <h1 id='about'>About</h1>
                 <hr />
             <Row>
-                <Col className='mt-2 fluid d-flex justify-content-center'>
+                <Col className='mt-2 fluid d-flex justify-content-center align-items-center'>
                     <img src={ProfilePicture} alt="Ryen Masters" className="img-fluid rounded-circle mb-4" style={{ width: '200px', height: '200px' }} />
                 </Col>
-                <Col>
+                <Col className='mt-2 fluid flex justify-content-center align-items-center'>
                     <div>
                         <Nav tabs justified>
                             <NavItem>
