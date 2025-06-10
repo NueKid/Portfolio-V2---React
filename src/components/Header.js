@@ -8,7 +8,7 @@ import {
     NavItem
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import { link, Element } from 'react-scroll';
+import { Link, Element } from 'react-scroll';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,25 +21,65 @@ const Header = () => {
             <NavbarToggler onClick={() => setIsOpen(!isOpen)} />
             <Collapse isOpen={isOpen} navbar>
             <Nav className='ms-auto' navbar>
-                    <NavItem >
-                        <NavLink className='nav-link' to='#about'>
+                    <NavItem>
+                        <Link 
+                            className='nav-link'
+                            to='about'
+                            active
+                            spy={true}
+                            hashSpy={true}
+                            smooth={true}
+                            duration={500}
+                            offset={-75}
+                            style={{ cursor: 'pointer', caretColor: 'transparent'}}
+                            >
                             <i className='fa fa-info fa-lg' /> About
-                        </NavLink> 
+                        </Link>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='#portfolio'>
+                        <Link 
+                            className='nav-link' 
+                            to='portfolio'
+                            active 
+                            spy={true}
+                            hashSpy={true}
+                            smooth={true} 
+                            duration={500} 
+                            offset={-75} 
+                            style={{ cursor: 'pointer', caretColor: 'transparent'}}
+                            >
                             <i className="fa fa-list fa-lg" /> Portfolio
-                        </NavLink>
+                        </Link>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/resume'>
+                        <Link 
+                            className='nav-link' 
+                            to='resume'
+                            active 
+                            spy={true}
+                            hashSpy={true} 
+                            smooth={true} 
+                            duration={500} 
+                            offset={-75} 
+                            style={{ cursor: 'pointer', caretColor: 'transparent'}}
+                            >
                             <i className='fa fa-file fa-lg' /> Resume
-                        </NavLink>
+                        </Link>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='#section1'>
+                        <Link 
+                            className='nav-link' 
+                            to='contact'
+                            active
+                            spy={true}
+                            hashSpy={true}
+                            smooth={true} 
+                            duration={500} 
+                            offset={-75} 
+                            style={{ cursor: 'pointer', caretColor: 'transparent'}}
+                            >
                             <i className='fa fa-address-card fa-lg' /> Contact
-                        </NavLink>
+                        </Link>
                     </NavItem>
                 </Nav>
             </Collapse>

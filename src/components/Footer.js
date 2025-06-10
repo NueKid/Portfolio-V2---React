@@ -1,5 +1,5 @@
 import { Container, Row, Col } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const Footer = () => {
     return (
@@ -10,16 +10,60 @@ const Footer = () => {
                     <h5>Links</h5>
                     <ul className='list-unstyled text-light'>
                         <li>
-                            <Link className='text-light' to='/about'>About</Link>
+                            <Link 
+                                className='text-light' 
+                                to='about'
+                                active
+                                spy={true}
+                                hashSpy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-75}
+                                style={{ cursor: 'pointer', caretColor: 'transparent'}}
+                                >About
+                            </Link>
                         </li>
                         <li>
-                            <Link className='text-light' to='/portfolio'>Portfolio</Link>
+                            <Link 
+                                className='text-light' 
+                                to='portfolio'
+                                active
+                                spy={true}
+                                hashSpy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-75}
+                                style={{ cursor: 'pointer', caretColor: 'transparent'}}
+                                >Portfolio
+                            </Link>
                         </li>
                         <li>
-                            <Link className='text-light' to='/resume'>Resume</Link>
+                            <Link 
+                                className='text-light' 
+                                to='resume'
+                                active
+                                spy={true}
+                                hashSpy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-75}
+                                style={{ cursor: 'pointer', caretColor: 'transparent'}}
+                                >Resume
+                            </Link>
                         </li>
                         <li>
-                            <Link className='text-light' to='/contact'>Contact</Link>
+                            <Link 
+                                className='text-light' 
+                                to='contact'
+                                active
+                                spy={true}
+                                hashSpy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-75}
+                                style={{ cursor: 'pointer', caretColor: 'transparent'}}
+                                >Contact
+                            </Link>
                         </li>
                     </ul>
                     </Col>

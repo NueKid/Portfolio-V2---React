@@ -5,9 +5,9 @@ export const PROJECTS = [
         id: 0,
         name: 'Literature Club',
         image: LitClubLogo,
-        type: 'Fullstack Web + Mobile App',
+        type: 'Frontend Web + Mobile App',
         description: 'A platform for book lovers to share and discuss their favorite literature. Every page is an adventure.',
-        tags: ['React', 'React Native', 'Node.js', 'MongoDB'],
+        tags: ['React', 'React Native', 'Redux', 'Express', 'OpenLibrary API'],
         github: [
             {
                 app: 'Frontend Web Client',
@@ -25,11 +25,11 @@ export const PROJECTS = [
     },
     {
         id: 1,
-        name: 'Literature Club Mobile',
+        name: 'Literature Club Server',
         image: LitClubLogo,
-        type: 'Fullstack Web + Mobile App',
+        type: 'Backend Server + API',
         description: 'Testing ID 1',
-        tags: ['React', 'React Native', 'Node.js', 'MongoDB'],
+        tags: ['Node.js', 'MongoDB', 'Express', 'Mongoose', 'JWT', 'Passport.js'],
         github: [
             {
                 app: 'Frontend Web Client',
@@ -47,11 +47,11 @@ export const PROJECTS = [
     },
     {
         id: 2,
-        name: 'Literature Club Server',
+        name: 'Portfolio Website V2',
         image: LitClubLogo,
-        type: 'Fullstack Web + Mobile App',
+        type: 'Frontend Web App',
         description: 'Testing ID 2',
-        tags: ['React', 'React Native', 'Node.js', 'MongoDB'],
+        tags: ['React', 'Node.js', 'Redux', 'Bootstrap'],
         github: [
             {
                 app: 'Frontend Web Client',

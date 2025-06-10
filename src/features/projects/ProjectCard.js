@@ -1,4 +1,4 @@
-import { Card, CardImg, CardImgOverlay, CardTitle, CardText } from 'reactstrap';
+import { Card, CardImg, CardTitle, CardText, Badge } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const ProjectCard = ({ project }) => {
@@ -6,19 +6,18 @@ const ProjectCard = ({ project }) => {
     return (
         <Link to={`${id}`} style={{ width: '18rem', height: '475px', textDecoration: 'none' }}>
             <Card 
-                className='text-dark'
+                className='bg-secondary text-light'
             >
                 <CardImg 
                     width='100%'
                     src={image}
                     alt={name}
                 />
-                    <CardTitle>{name}</CardTitle>
-                    <CardText>{`Type: ${type}`}</CardText>
-                    <CardText>
-                        Tags: 
-                        {project.tags.map((index, tag) => (
-                        <span key={index}>{ (tag ? ', ' : ' ') + index }</span>
+                    <CardTitle style={{ textDecoration: 'underline' }}>{name}</CardTitle>
+                    <CardText>{type}</CardText>
+                    <CardText className='pb-2'>
+                        {project.tags.map((tag) => (
+                        <Badge pill color='primary'>{tag}</Badge>
                     ))}</CardText>
             </Card>
         </Link>

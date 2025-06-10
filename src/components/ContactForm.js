@@ -49,6 +49,7 @@ const ContactForm = () => {
                     <Col md='10'>
                         <Field
                             name='firstName'
+                            id='firstName'
                             placeholder='First Name'
                             className='form-control'
                         />
@@ -64,6 +65,7 @@ const ContactForm = () => {
                     <Col md='10'>
                         <Field
                             name='lastName'
+                            id='lastName'
                             placeholder='Last Name'
                             className='form-control'
                         />
@@ -79,6 +81,7 @@ const ContactForm = () => {
                     <Col md='10'>
                         <Field
                             name='phoneNum'
+                            id='phoneNum'
                             placeholder='Phone Number'
                             className='form-control'
                         />
@@ -94,6 +97,7 @@ const ContactForm = () => {
                     <Col md='10'>
                         <Field
                             name='email'
+                            id='email'
                             placeholder='Email'
                             type='email'
                             className='form-control'
@@ -112,6 +116,7 @@ const ContactForm = () => {
                             name='contactType'
                             as='select'
                             className='form-control'
+                            style={{ caretColor: 'transparent'}}
                         >
                             <option>By Phone</option>
                             <option>By Email</option>
@@ -125,6 +130,8 @@ const ContactForm = () => {
                     <Col md='10'>
                         <Field
                             name='message'
+                            id='message'
+                            placeholder='Your Message'
                             as='textarea'
                             rows='10'
                             className='form-control'
