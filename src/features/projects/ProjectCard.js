@@ -2,7 +2,7 @@ import { Card, CardImg, CardTitle, CardText, Badge } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const ProjectCard = ({ project }) => {
-    const { id, image, name, type, tag } = project
+    const { id, image, name, type, logo } = project
     return (
         <Link to={`${id}`} style={{ width: '18rem', height: '475px', textDecoration: 'none' }}>
             <Card 
@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
             >
                 <CardImg 
                     width='100%'
-                    src={image}
+                    src={logo}
                     alt={name}
                 />
                     <CardTitle style={{ textDecoration: 'underline' }}>{name}</CardTitle>

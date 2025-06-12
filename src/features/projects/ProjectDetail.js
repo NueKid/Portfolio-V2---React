@@ -7,14 +7,27 @@ const ProjectDetail = ({ project }) => {
         <Container className='fluid mt-2'>
             <h1>{name}</h1>
             <hr/>
-            <Row>
+            <Row className='align-items-center'>
                 <Col>
-                    <Row>
-                        {description}
-                    </Row>
-                <br/>
-                View this project on Github <i className='fa fa-github fa-lg text-light' />
-                <br/>
+                    <p>{description}</p>
+                </Col>
+                <Col>
+                    <img src={image[0]} alt={name} style={{ width: '100%', borderRadius: 10 }} />
+                </Col>
+            </Row>
+            <Row className='mt-2 align-items-center'>
+                <Col>
+                    <img src={image[1]} alt={name} style={{ width: '100%', borderRadius: 10  }} />
+                </Col>
+                <Col>
+                    <p>Quickly and easily add books to your Reading List. 
+                       Find the best online shops to purchase physical media or audio books.
+                       Or read your favorite titles online with our eReader!
+                    </p>
+                </Col>
+            </Row>
+            <Row className='align-items-center mt-4'>
+                <p style={{ fontWeight: 'bold' }}>View this project on Github <i className='fa fa-github fa-lg text-light' /></p>
                     <ul style={{ listStyleType: 'none'}}>
                     {github.map((item, index) => (
                         <li key={index}>
@@ -27,10 +40,6 @@ const ProjectDetail = ({ project }) => {
                         </li>
                     ))}
                     </ul>
-                </Col>
-                <Col>
-                <img src={image} alt={name} style={{ width: '100%' }} />
-                </Col>
             </Row>
         </Container>
     )
