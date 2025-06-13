@@ -26,6 +26,7 @@ const ProjectDetail = ({ project }) => {
                     </p>
                 </Col>
             </Row>
+            <hr />
             <Row className='align-items-center mt-4'>
                 <p style={{ fontWeight: 'bold' }}>View this project on Github <i className='fa fa-github fa-lg text-light' /></p>
                     <ul style={{ listStyleType: 'none'}}>

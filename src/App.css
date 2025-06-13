@@ -52,6 +52,10 @@
     background-color: #8F3985 !important;
     border-color: #8F3985 !important;
 }
+.btn-primary:hover {
+    background-color: #0dcaf0 !important;
+    border-color: #0dcaf0 !important;
+}
 
 .row-content {
     padding: 50px 0;
@@ -67,3 +71,26 @@ border: 0px solid #8F3985 !important;
 .badge-primary {
     color: #8F3985 !important;
 }
+
+.scrollable-container {
+    overflow-y: auto;
+    max-height: 400px; 
+}
+
+.scrollable-container::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+    background: #8F3985; /* Track color */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+    background: #770069; /* Thumb color */
+    border-radius: 5px; /* Rounded corners for thumb */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+    background: #0dcaf0; /* Hover color for thumb */
+}
+

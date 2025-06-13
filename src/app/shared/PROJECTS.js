@@ -56,7 +56,7 @@ export const PROJECTS = [
         image: [LitClubWebMobile, LitClubReader],
         type: 'Frontend Web App',
         description: 'Testing ID 2',
-        tags: ['React', 'Node.js', 'Redux', 'Bootstrap'],
+        tags: ['React', 'Node.js', 'Redux', 'Bootstrap', 'SASS', 'React-Spring'],
         github: [
             {
                 app: 'Frontend Web Client',

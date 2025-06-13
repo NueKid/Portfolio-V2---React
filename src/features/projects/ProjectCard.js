@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
     return (
         <Link to={`${id}`} style={{ width: '18rem', height: '475px', textDecoration: 'none' }}>
             <Card 
-                className='bg-secondary text-light'
+                className='bg-secondary text-light card'
             >
                 <CardImg 
                     width='100%'

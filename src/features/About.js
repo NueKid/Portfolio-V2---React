@@ -10,7 +10,6 @@ import { Container,
 import { useState } from 'react';
 import ProfilePicture from '../app/assets/img/ryen-masters.jpg';
 import { Element } from 'react-scroll';
-import { text } from '@fortawesome/fontawesome-svg-core';
 
 const About = () => {
     const [currentTab, setCurrentTab] = useState('1');

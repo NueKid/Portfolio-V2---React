@@ -71,7 +71,7 @@ const Header = () => {
                     <NavItem>
                         <Link 
                             className='nav-link' 
-                            to='resume'
+                            to='experience'
                             active 
                             spy={true}
                             hashSpy={true} 
@@ -104,8 +104,9 @@ const Header = () => {
                 {isHomePage && (
                 <NavItem>
                     <Button 
-                        href='#' 
-                        tag='a' 
+                        href={process.env.PUBLIC_URL + '/Resume.pdf'}
+                        tag='a'
+                        target='_blank'
                         color='info' 
                         className='text-light'
                         style={{ caretColor: 'transparent'}}
