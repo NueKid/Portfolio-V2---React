@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 
 const Experience = () => {
     return (
-        <Element name="experience">
+        <Element name="experience" style={{ caretColor: 'transparent'}}>
             <Container className="fluid mt-2">
                 <h1>Experience</h1>
                 <hr />

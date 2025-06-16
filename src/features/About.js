@@ -29,7 +29,7 @@ const About = () => {
 
     return (
         <Element name='about'>
-            <Container className='fluid mt-2'>
+            <Container className='fluid mt-2' style={{ caretColor: 'transparent'}} >
                     <h1 id='about'>About</h1>
                     <hr />
                 <Row>

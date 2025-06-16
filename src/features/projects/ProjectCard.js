@@ -8,7 +8,8 @@ const ProjectCard = ({ project }) => {
             <Card 
                 className='bg-secondary text-light card'
             >
-                <CardImg 
+                <CardImg
+                    className='card-image-container'
                     width='100%'
                     src={logo}
                     alt={name}

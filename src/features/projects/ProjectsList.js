@@ -6,7 +6,7 @@ import { Element } from "react-scroll";
 const ProjectsList = () => {
     return (
         <Element name='portfolio'>
-            <Container className="fluid mt-2">
+            <Container className="fluid mt-2" style={{ caretColor: 'transparent'}}>
                 <h1 id='portfolio'>Portfolio</h1>
                 <hr />
                 <Row>
