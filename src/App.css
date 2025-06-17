@@ -68,6 +68,10 @@ background-color:#8F3985 !important;
 border: 0px solid #8F3985 !important;
 }
 
+.tab:hover {
+  background-color: #0dcaf0 !important;
+}
+
 .badge-primary {
     color: #8F3985 !important;
 }
@@ -83,6 +87,10 @@ border: 0px solid #8F3985 !important;
      height: 100%;
      object-fit: cover;
      object-position: center;
+}
+
+.card {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .dropImg {

@@ -63,11 +63,15 @@ const About = () => {
                             <TabContent activeTab={currentTab}>
                                 <TabPane tabId='1'>
                                     <p style={{ textAlign: 'left' }}>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                        anim id est laborum.
+                                        Hi, My name is Ryen! My interest in web development began, like most people my age, 
+                                        when MySpace & FaceBook were taking the web by storm. Surprisingly, the drive to have an extraordinary 
+                                        MySpace profile is what originally taught me about HTML & CSS.
+                                    </p>
+                                    <p style={{ textAlign: 'left' }}>
+                                        I had a bit of a renaissance with programming when I was tasked to learn about PLC Ladder Logic 
+                                        to assist with manufacturing automation in my last position. Fast forward to present day, 
+                                        I decided to go back to school fulltime to follow my dreams of becoming a developer. 
+                                        I spent that last year completing my courses and honing my skills to develop exceptional online experiences.
                                     </p>
                                 </TabPane>
                                 <TabPane tabId='2'>

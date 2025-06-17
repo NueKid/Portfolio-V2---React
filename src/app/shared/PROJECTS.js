@@ -2,6 +2,8 @@ import LitClubLogo from '../assets/img/LitClubLogoSquare.png';
 import LitClubWebMobile from '../assets/img/LitClubWebMobile.png';
 import LitClubReader from '../assets/img/LitClubReader.png';
 import PortfolioSC from '../assets/img/PortfolioSC.png'
+import LitClubServerUsers from '../assets/img/LitClubServerUsers.png';
+import AuthMongo from '../assets/img/AuthMongo.png';
 
 export const PROJECTS = [
     {
@@ -32,9 +34,9 @@ export const PROJECTS = [
         id: 1,
         name: 'Literature Club Server',
         logo: LitClubLogo,
-        image: [LitClubWebMobile, LitClubReader],
+        image: [LitClubServerUsers, AuthMongo],
         type: 'Backend Server + API',
-        description: 'A backend server with RESTful API for managing user accounts, reading lists and libraries. Devloped with Node.js, MongoDB and Express.',
+        description: 'A backend server with RESTful API for managing user accounts, reviews, reading lists and libraries. Devloped with Node.js, MongoDB and Express.',
         tags: ['Node.js', 'MongoDB', 'Express', 'Mongoose', 'JWT', 'Passport.js'],
         copy: ['Utilizing JWT with Salt and Hash for data encryption. Additionally, Passport.js has been implemented to allow account creation through FaceBook Login, with more to come.'],
         github: [
@@ -62,16 +64,8 @@ export const PROJECTS = [
         tags: ['React', 'Node.js', 'Redux', 'Bootstrap', 'SASS', 'React-Spring'],
         github: [
             {
-                app: 'Frontend Web Client',
-                url: 'https://github.com/NueKid/literatureclubWebClient'
-            },
-            {
-                app: 'Backend API',
-                url: 'https://github.com/NueKid/literatureclubServer'
-            },
-            {
-                app: 'Frontend Mobile Client',
-                url: 'https://github.com/NueKid/literatureclubMobileClient'
+                app: 'Portfolio V2',
+                url: 'https://github.com/NueKid/Portfolio-V2---React'
             }
         ]
     }
