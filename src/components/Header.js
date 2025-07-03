@@ -11,6 +11,7 @@ import {
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-scroll';
 import { useLocation } from 'react-router-dom';
+import RyenLogo from '../app/assets/img/RyenLogoInfo.png'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,8 @@ const Header = () => {
     return (
         <Navbar dark className='color-primary' sticky='top' expand='md' >
             <NavbarBrand className='ms-5' href='/'>
-                Ryen Masters
+                <img src={RyenLogo} alt='Ryen Masters Logo' className='float-start mt-1' style={{width: '15%'}}/>
+                <h5 className='mt-1'>Ryen Masters</h5>
             </NavbarBrand>
             <NavbarToggler onClick={() => setIsOpen(!isOpen)} />
             <Collapse isOpen={isOpen} navbar>

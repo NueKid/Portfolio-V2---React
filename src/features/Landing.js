@@ -17,7 +17,7 @@ const Landing = () => {
                         <span className='fw-bold' style={{ fontSize: 56, caretColor: 'transparent'}}>A full-stack developer with a passion for innovation.</span>
                         <br />
                         <br />
-                        <span className='fw-bold text-light' style={{ caretColor: 'transparent' }}>I am a Full-stack Software Engineer specializing in developing remarkable experiences with front-end finesse and back-end brilliance.</span>
+                        <span className='fw-bold text-light' style={{ caretColor: 'transparent' }}>Specializing in developing remarkable experiences with front-end finesse and back-end brilliance.</span>
                 </p>
             </Row>
             <hr />
