@@ -9,7 +9,7 @@ const ProjectsList = () => {
             <Container className="fluid mt-2" style={{ caretColor: 'transparent'}}>
                 <h1 id='portfolio'>Portfolio</h1>
                 <hr />
-                <Row>
+                <Row className='my-4'>
                     {PROJECTS.map((project) => (
                         <Col 
                             md='4'

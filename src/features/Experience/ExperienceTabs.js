@@ -20,7 +20,7 @@ const ExperienceTabs = () => {
 
     return (
         <Nav pills vertical justified>
-            <Row>
+            <Row className='my-4'>
                 <Col sm='3'>
                     <NavItem>
                         <NavLink
@@ -78,16 +78,13 @@ const ExperienceTabs = () => {
                                 <h6>Mar 2021 - June 2024</h6>
                                     <ul>
                                         <li>
-                                            Manage both on-site and remote customer service team members nationwide.
+                                            Led and managed nationwide customer service team, optimizing operations through SOPs and technology.
                                         </li>
                                         <li>
-                                            Developed and implemented new services, Standard Operating Procedures(SOP) and technologies.
+                                            Increased efficiency by 25% through tech implementation.
                                         </li>
                                         <li>
-                                            Provide the executive team with detailed analytics of overall customer experience, project updates and timelines, and any departmental concerns.
-                                        </li>
-                                        <li>
-                                            Cross-functionally work with sourcing teams, accounting, sales and production teams to ensure operational compliance and heightened customer experience.
+                                            Reported customer analytics and updates to the executive team.
                                         </li>
                                     </ul>
                                     <br />
@@ -95,19 +92,13 @@ const ExperienceTabs = () => {
                                 <h6>Jan 2019 - Mar 2021</h6>
                                     <ul>
                                         <li>
-                                            Manage & Direct both inside and outside sales teams nationwide.
+                                            Built the department from the ground up, generating $3.5MM revenue.
                                         </li>
                                         <li>
-                                            Develop and implement sales strategies, programs and techniques.
+                                            Secured contracts with US Government and Fortune 500 companies.
                                         </li>
                                         <li>
-                                            Assist the manufacturing team with Research and development of new products.
-                                        </li>
-                                        <li>
-                                            Oversee Projects and ensure they are completed on time and within budget.
-                                        </li>
-                                        <li>
-                                            Cross-functionally work with legal teams, customer service, sales and production teams to ensure contractual compliance.
+                                            Collaborated with R&D and cross-functional teams on product innovation.
                                         </li>
                                     </ul>
                                     <br />
@@ -115,22 +106,13 @@ const ExperienceTabs = () => {
                                 <h6>Aug. 2011 - Jan. 2019</h6>
                                     <ul>
                                         <li>
-                                            Plan and oversee projects to ensure they are completed within the required timeline and budget.
+                                            Delivered major cost-saving projects ($1.2MM+), improving logistics and operations.
                                         </li>
                                         <li>
-                                            Maintain partnerships with vendors and suppliers to control resources and deliverables.
+                                            Managed vendor relations, project timelines, and stakeholder communication.
                                         </li>
                                         <li>
-                                            Present project updates to management and/or respective stakeholders.
-                                        </li>
-                                        <li>
-                                            Delegate responsibilities to multi-functional teams, both internal and external.
-                                        </li>
-                                        <li>
-                                            Meet with clients to understand project requirements and scope.
-                                        </li>
-                                        <li>
-                                            Develop project plans, spreadsheets, workflows and process maps to implement new programs.
+                                            Improved operations and reduced time-to-task by 43% via system audits and enhancements.
                                         </li>
                                     </ul>
                         </TabPane>
@@ -139,17 +121,13 @@ const ExperienceTabs = () => {
                                 <h6>Oct. 2009 - Aug. 2011</h6>
                                     <ul>
                                         <li>
-                                            Develop standardized product knowledge information for employee onboarding. 
-                                            Ensures adequate inventory of materials and products in accordance with inventory cycles and organizational philosophy.
+                                            Developed onboarding programs and managed safety compliance.
                                         </li>
                                         <li>
-                                            Ensure Occupational Safety and Health Act, local health and safety codes, and company safety and security policies are met.
+                                            Managed inventory and maintained accurate tracking within organizational guidelines.
                                         </li>
                                         <li>
-                                            Conducts inspections and tracks risks/hazards/discrepancies in accordance with the Corporate Management program.
-                                        </li>
-                                        <li>
-                                            Develop and train all management on the new Environmental Education Training Program (including accident reports and worker's compensation).
+                                            Conducted regular safety inspections to identify and resolve workplace hazards.
                                         </li>
                                     </ul>
                         </TabPane>
@@ -158,13 +136,10 @@ const ExperienceTabs = () => {
                                 <h6>Feb 2007 - Dec 2009</h6>
                                     <ul>
                                         <li>
-                                            Manage contracts, negotiations and budgets for all projects.
+                                            Managed production contracts, budgets, and timelines for multiple clients.
                                         </li>
                                         <li>
-                                            Coordinate with Artist teams and internal teams to ensure projects are completed within the required timeline and scope.
-                                        </li>
-                                        <li>
-                                            Plan events or performances for releases. Audio editing, sound design and ghost production as needed.
+                                            Coordinated between artists and technical teams to meet delivery goals.
                                         </li>
                                     </ul>
                         </TabPane>

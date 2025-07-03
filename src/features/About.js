@@ -32,8 +32,8 @@ const About = () => {
             <Container className='fluid mt-2' style={{ caretColor: 'transparent'}} >
                     <h1 id='about'>About</h1>
                     <hr />
-                <Row>
-                    <Col className='mt-2 fluid d-flex justify-content-center align-items-center'>
+                <Row className='my-4'>
+                    <Col sm='4' className='mt-2 fluid d-flex justify-content-center align-items-center'>
                         <img src={ProfilePicture} alt="Ryen Masters" className="img-fluid rounded-circle mb-4" style={{ width: '200px', height: '200px' }} />
                     </Col>
                     <Col className='mt-2 fluid flex justify-content-center align-items-center'>

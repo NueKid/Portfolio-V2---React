@@ -77,16 +77,10 @@ border: 0px solid #8F3985 !important;
 }
 
 .card-image-container {
-  width: 200px;
-  height: 200px;
+  width: 18vh;
+  min-height: 10vh;
+  max-height: 30vh;
   overflow: hidden;
-}
-
-.card-image-container img {
-  width: 100%;
-     height: 100%;
-     object-fit: cover;
-     object-position: center;
 }
 
 .card {
@@ -95,6 +89,19 @@ border: 0px solid #8F3985 !important;
 
 .dropImg {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 768px) {
+  .vh {
+    height: 90vh;
+  }
+
+  .card-image-container img {
+    width: 100%;
+       height: 100%;
+       object-fit: center;
+       object-position: center;
+  }
 }
 
 .scrollable-container {

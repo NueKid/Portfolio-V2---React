@@ -8,7 +8,7 @@ const Contact = () => {
             <Container className="fluid mt-2">
                 <h1 id='contact'>Contact</h1>
                 <hr />
-                <Row>
+                <Row className='my-4'>
                     <ContactForm />
                 </Row>
                 <hr />

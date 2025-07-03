@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'reactstrap'
 const Landing = () => {
     return (
         <Container className='text-start mt-4'>
-            <Row className='align-items-center' style={{ height: '90vh' }}>
+            <Row className='align-items-center vh'>
                 <p 
                     className='text-info fw-bold'
                     style={{ caretColor: 'transparent' }}
