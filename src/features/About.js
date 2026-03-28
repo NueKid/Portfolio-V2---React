@@ -128,7 +128,21 @@ const About = () => {
                                                     </Progress>
                                                     <Progress
                                                         className='my-2' 
-                                                        value='65'
+                                                        value='85'
+                                                        color='primary'
+                                                        style={{ height: '30px'}}
+                                                    > TypeScript
+                                                    </Progress>
+                                                    <Progress
+                                                        className='my-2' 
+                                                        value='80'
+                                                        color='primary'
+                                                        style={{ height: '30px'}}
+                                                    > Python
+                                                    </Progress>
+                                                    <Progress
+                                                        className='my-2' 
+                                                        value='70'
                                                         color='primary'
                                                         style={{ height: '30px'}}
                                                     > C#
@@ -145,14 +159,7 @@ const About = () => {
                                                         value='80'
                                                         color='primary'
                                                         style={{ height: '30px'}}
-                                                    > CSS
-                                                    </Progress>
-                                                    <Progress
-                                                        className='my-2' 
-                                                        value='60'
-                                                        color='primary'
-                                                        style={{ height: '30px'}}
-                                                    > SASS
+                                                    > CSS / SASS
                                                     </Progress>
                                                 </TabPane>
                                                 <TabPane tabId='2'>
@@ -182,14 +189,28 @@ const About = () => {
                                                         value='75'
                                                         color='primary'
                                                         style={{ height: '30px'}}
+                                                    > Redux + RTK
+                                                    </Progress>
+                                                    <Progress
+                                                        className='my-2' 
+                                                        value='75'
+                                                        color='primary'
+                                                        style={{ height: '30px'}}
                                                     > Express.js
+                                                    </Progress>
+                                                    <Progress
+                                                        className='my-2' 
+                                                        value='85'
+                                                        color='primary'
+                                                        style={{ height: '30px'}}
+                                                    > Expo
                                                     </Progress>
                                                     <Progress
                                                         className='my-2' 
                                                         value='80'
                                                         color='primary'
                                                         style={{ height: '30px'}}
-                                                    > MongoDB
+                                                    > Mongoose (MongoDB)
                                                     </Progress>
                                                 </TabPane>
                                                 <TabPane tabId='3'>

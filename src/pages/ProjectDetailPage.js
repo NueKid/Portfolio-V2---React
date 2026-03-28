@@ -5,11 +5,12 @@ import { PROJECTS } from '../app/shared/PROJECTS';
 
 const ProjectDetailPage = () => {
     const { projectId } = useParams();
+    const project = PROJECTS.find(p => p.id === projectId)
     console.log(projectId);
 
     return (
         <Container>
-            <ProjectDetail project={PROJECTS[projectId]}/>
+            <ProjectDetail project={project}/>
         </Container>
     )
 }

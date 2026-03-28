@@ -1,13 +1,21 @@
 import { Card, CardImg, CardTitle, CardText, Badge } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { width } from '@fortawesome/free-regular-svg-icons/faAddressBook';
 
 const ProjectCard = ({ project }) => {
-    const { id, image, name, type, logo } = project
+    const { id, image, name, type, isNew, logo } = project;
+
     return (
         <Link to={`${id}`} style={{ width: '18rem', textDecoration: 'none' }}>
             <Card 
-                className='bg-secondary text-light card'
+                className={
+                    isNew 
+                    ? 'bg-secondary text-light card border-2 border-primary'
+                    : 'bg-secondary text-light card'}
             >
+                {isNew &&
+                    <span className='new-tag'>NEW</span>
+                }
                 <CardImg
                     className='card-image-container'
                     width='100%'
